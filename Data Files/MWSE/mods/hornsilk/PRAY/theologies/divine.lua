@@ -11,7 +11,7 @@ this.description = (
 )
 
 this.knowledgeRequirement = function()
-    return tes3.getFaction("Imperial Cult").playerJoined
+    return (tes3.getFaction("Imperial Cult").playerJoined or tes3.getFaction("T_Cyr_ImperialCult").playerJoined or tes3.getFaction("T_Cyr_ItinerantPriests").playerJoined or tes3.getFaction("T_Sky_ImperialCult").playerJoined)
 end
 
 this.recipes = {
